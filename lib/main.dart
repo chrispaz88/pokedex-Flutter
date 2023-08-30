@@ -31,6 +31,8 @@ class MyApp extends StatelessWidget {
           title: 'Pokedex',
           //home: new MainWidget(),
           initialRoute: '/',
+          /// The `routes` property in the `MaterialApp` widget is used to define the routes for navigating
+          /// between different screens in the application.
           routes: {
             '/': (context) => const SignInScreen(),
             MainWidget.routeName: (context) => const MainWidget(),
