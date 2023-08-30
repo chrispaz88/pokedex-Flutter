@@ -5,7 +5,7 @@ import '../screens/pokemon_favorite_list.dart';
 import '../screens/pokemon_screen.dart';
 
 class MainWidget extends StatefulWidget {
-  static const routeName = '/';
+  static const routeName = '/main';
 
   const MainWidget({super.key});
 

@@ -17,7 +17,7 @@ class _SignInScreenState extends State<SignInScreen> {
   final TextEditingController _emailTextController = TextEditingController();
   final TextEditingController _passwordTextController = TextEditingController();
 
-  void _signIn() async {
+  Future<void> _signIn(BuildContext context) async {
     if (_emailTextController.text.isEmpty ||
         _passwordTextController.text.isEmpty) {
       showDialog(
@@ -104,7 +104,12 @@ class _SignInScreenState extends State<SignInScreen> {
                   _passwordTextController,
                 ),
                 const SizedBox(height: 5),
-                firebaseUIButton(context, "Ingresar", _signIn),
+                firebaseUIButton(context, "Ingresar", () async {
+                    await _signIn(context)
+                        .then((value) => print("Inicio de sesión exitoso"))
+                        .catchError((error) =>
+                            print("Error en inicio de sesión: $error"));
+                  }), 
               ],
             ),
           ),

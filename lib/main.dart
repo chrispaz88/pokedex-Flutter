@@ -4,6 +4,7 @@ import 'package:pokedex_mobile/providers/category_provider.dart';
 import 'package:pokedex_mobile/providers/pokemon_provider.dart';
 import 'package:pokedex_mobile/screens/pokemon_details.dart';
 import 'package:pokedex_mobile/screens/signin_screen.dart';
+import 'package:pokedex_mobile/widgets/main_widget.dart';
 import 'package:provider/provider.dart';
 import 'firebase_options.dart';
 
@@ -29,11 +30,12 @@ class MyApp extends StatelessWidget {
         child: MaterialApp(
           title: 'Pokedex',
           //home: new MainWidget(),
-          //initialRoute: MainWidget.routeName,
+          initialRoute: '/',
           routes: {
             '/': (context) => const SignInScreen(),
+            MainWidget.routeName: (context) => const MainWidget(),
             PokemonDetailsScreen.routeName: (context) =>
-                const PokemonDetailsScreen()
+                const PokemonDetailsScreen(),
           },
         ));
   }
