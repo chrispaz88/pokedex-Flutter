@@ -22,11 +22,11 @@ samples, guidance on mobile development, and a full API reference.
 ![SingIn](https://github.com/chrispaz88/pokedex-Flutter/blob/main/assets/images/SigInChris.png)
 
 - Categories  
-![SingIn](https://github.com/chrispaz88/pokedex-Flutter/blob/main/assets/images/SigInChris.png)
+![SingIn](https://github.com/chrispaz88/pokedex-Flutter/blob/main/assets/images/VentanaCategorias.png)
 
 - Pokemons  
-![SingIn](https://github.com/chrispaz88/pokedex-Flutter/blob/main/assets/images/SigInChris.png)
+![SingIn](https://github.com/chrispaz88/pokedex-Flutter/blob/main/assets/images/VentanaPokemones.png)
 
 - Favorites  
-![SingIn](https://github.com/chrispaz88/pokedex-Flutter/blob/main/assets/images/SigInChris.png)
+![SingIn](https://github.com/chrispaz88/pokedex-Flutter/blob/main/assets/images/VentanaFavoritos.png)
 
